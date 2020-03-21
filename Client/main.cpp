@@ -10,7 +10,7 @@ void ShowErrorMessage(string message) {
 	exit(1); 
 }
 
-int main() {
+int main() { //클라이언트 소스
 	WSADATA wsaData; SOCKET clientSocket; SOCKADDR_IN serverAddress;
 	int serverPort = 9876; char received[256]; string sent;
 	if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) // Winsock을 초기화 합니다. 
